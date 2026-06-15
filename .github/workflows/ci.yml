@@ -85,6 +85,6 @@ jobs:
               -e QEMU_CPU='${{ matrix.qemu_cpu }}' \
               -v "$PWD:/work" -w /work \
               ${{ matrix.image }} \
-              "/$bin" -test.v
+              "/work/$bin" -test.v
             echo "::endgroup::"
           done
